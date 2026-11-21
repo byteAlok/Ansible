@@ -22,20 +22,20 @@
   - [⚙️ 1.3 Configuration Management](#13-configuration-management)
   - [✨ 1.4 Advantages of Ansible](#14-advantages-of-ansible)
 
-- [🏗️ 2. Ansible Architecture](#2--ansible-architecture)
-  - [🖥️ 2.1 Control Node](#21-control-node)
-  - [🎯 2.2 Managed Nodes](#22-managed-nodes)
-  - [📋 2.3 Inventory](#23-inventory)
-  - [📜 2.4 Playbooks](#24-playbooks)
-  - [🧩 2.5 Modules](#25-modules)
-  - [🔗 2.6 Architecture Components](#26-architecture-components-together)
+- [🏗️ 2. Ansible Architecture](#ansible-architecture)
+  - [🖥️ 2.1 Control Node](#architecture-control-node)
+  - [🎯 2.2 Managed Nodes](#architecture-managed-nodes)
+  - [📋 2.3 Inventory](#architecture-inventory)
+  - [📜 2.4 Playbooks](#architecture-playbooks)
+  - [🧩 2.5 Modules](#architecture-modules)
+  - [🔗 2.6 Architecture Components](#architecture-components)
 
-- [🖥️ 3. Control Node](#3--control-node)
+- [🖥️ 3. Control Node](#control-node)
   - [🔍 3.1 What is a Control Node?](#31-what-is-a-control-node)
   - [🛠️ 3.2 Control Node Requirements](#32-what-is-required-on-a-control-node)
   - [⚡ 3.3 Automation Execution](#33-automation-execution-on-the-control-node)
 
-- [🎯 4. Managed Nodes](#4--managed-nodes)
+- [🎯 4. Managed Nodes](#managed-nodes)
   - [🔍 4.1 What is a Managed Node?](#41-what-is-a-managed-node)
   - [📦 4.2 Managed Node Requirements](#42-what-is-required-on-a-managed-node)
   - [⚙️ 4.3 Tasks Performed on Managed Nodes](#43-what-tasks-can-be-performed-on-managed-nodes)
@@ -57,7 +57,7 @@
   - [🛡️ 6.6 AWS Security Group](#66-aws-security-group)
   - [✅ 6.7 Verifying SSH Connectivity](#67-verifying-ssh-connectivity)
 
-- [📥 7. Ansible Installation and Configuration](#7--ansible-installation-and-configuration)
+- [📥 7. Ansible Installation and Configuration](#ansible-installation)
   - [📍 7.1 Where Will We Install Ansible?](#71-where-will-we-install-ansible)
   - [🔄 7.2 Updating the System](#72-updating-the-system)
   - [📦 7.3 Installing Ansible](#73-installing-ansible)
@@ -70,7 +70,7 @@
   - [🎯 8.3 Python on Managed Nodes](#83-python-on-managed-nodes)
   - [🔎 8.4 Verifying Python on Managed Nodes](#84-verifying-python-on-managed-nodes)
 
-- [⚙️ 9. Ansible Configuration](#9--ansible-configuration)
+- [⚙️ 9. Ansible Configuration](#ansible-configuration)
   - [🔍 9.1 Verifying Configuration](#91-verifying-configuration)
 
 - [🔐 10. SSH Connectivity – Practical Setup](#10--ssh-connectivity--practical-setup)
@@ -99,15 +99,15 @@
   - [🧩 12.7 Executing Modules](#127-step-7--executing-modules-on-remote-systems)
   - [📤 12.8 Returning Results](#128-step-8--returning-results)
   - [📊 12.9 Execution Summary](#129-step-9--execution-summary)
-  - [🔁 12.10 Complete Workflow](#1210-complete-workflow)
+  - [🔄 12.10 Complete Workflow](#complete-workflow)
 
 - [📝 13. Complete Day 1 Revision Notes](#13--complete-day-1-revision-notes)
 - [⌨️ 14. Important Commands Learned](#14--important-commands-learned)
 - [🔧 15. Predefined vs User-Created Components](#15--predefined-vs-user-created-components)
-- [⚠️ 16. Common Mistakes](#16--common-mistakes--day-1)
+- [⚠️ 16. Common Mistakes](#common-mistakes)
 - [🎓 17. What You Can Do After Day 1](#17--what-you-can-do-after-day-1)
 - [🧠 18. Knowledge Check](#18--knowledge-check--day-1)
-- [🏁 19. Final Recap](#19--final-recap)
+- [🏁 19. Final Recap](#day-1-final-recap)
 
 ---
 
@@ -279,6 +279,7 @@ Dedicated Ansible agents generally do not need to be installed and continuously 
 
 ---
 
+<a id="ansible-architecture"></a>
 # 2. 🏗️ Ansible Architecture
 
 Understanding Ansible architecture is very important because Inventory, Playbooks, Roles, and automation will work around this architecture.
@@ -318,6 +319,7 @@ Let's understand them.
 
 ---
 
+<a id="architecture-control-node"></a>
 ## 2.1 🖥️ Control Node
 
 The Control Node is the machine where Ansible is installed and automation is executed.
@@ -360,6 +362,7 @@ Ansible does not generally need to be installed on Managed Nodes.
 
 ---
 
+<a id="architecture-managed-nodes"></a>
 ## 2.2 🖥️ Managed Nodes
 
 Managed Nodes are remote machines that Ansible manages or automates.
@@ -404,6 +407,7 @@ In the Inventory topic, we will learn how to define these groups.
 
 ---
 
+<a id="architecture-inventory"></a>
 ## 2.3 📋 Inventory
 
 Inventory tells Ansible which servers are available and which machines it should target.
@@ -452,6 +456,7 @@ We will study Inventory in detail later.
 
 ---
 
+<a id="architecture-playbooks"></a>
 ## 2.4 📜 Playbooks
 
 A Playbook is a YAML file that defines what Ansible should do on managed servers.
@@ -480,6 +485,7 @@ A Playbook contains your automation instructions.
 
 ---
 
+<a id="architecture-modules"></a>
 ## 2.5 ⚙️ Modules
 
 A Module is an Ansible component that performs a specific operation.
@@ -509,7 +515,8 @@ Modules, their arguments, and practical usage will be studied later.
 
 ---
 
-## 🧩 2.6 Architecture Components Together
+<a id="architecture-components"></a>
+## 2.6 🧩 Architecture Components Together
 
 | Component | Role |
 |---|---|
@@ -524,6 +531,7 @@ Modules, their arguments, and practical usage will be studied later.
 
 ---
 
+<a id="control-node"></a>
 # 3. 🖥️ Control Node
 
 ## 3.1 What is a Control Node?
@@ -615,6 +623,7 @@ The Control Node acts as the brain of the automation process.
 
 ---
 
+<a id="managed-nodes"></a>
 # 4. 🖥️ Managed Nodes
 
 ## 4.1 What is a Managed Node?
@@ -1109,6 +1118,7 @@ Exits the remote SSH session.
 
 ---
 
+<a id="ansible-installation"></a>
 # 7. ⚙️ Ansible Installation and Configuration
 
 Now we will understand the installation environment and practical setup required to install Ansible.
@@ -1402,6 +1412,7 @@ The remote Python requirement is for module execution on Managed Nodes.
 
 ---
 
+<a id="ansible-configuration"></a>
 # 9. ⚙️ Ansible Configuration
 
 Ansible's behavior can be controlled through a configuration file.
@@ -1953,6 +1964,7 @@ Remember Ansible's important behavior:
 
 ---
 
+<a id="complete-workflow"></a>
 ## 12.10 Complete Workflow – One Flow
 
 ```mermaid
@@ -2109,6 +2121,7 @@ This distinction is very important while learning Ansible.
 
 ---
 
+<a id="common-mistakes"></a>
 # 16. ⚠️ Common Mistakes – Day 1
 
 ### ❌ 1. Installing Ansible on Managed Nodes
@@ -2257,6 +2270,7 @@ Inventory defines the managed hosts and their groups that Ansible can target.
 
 ---
 
+<a id="day-1-final-recap"></a>
 # 19. 🎓 Final Recap
 
 ## 🚀 Ansible Foundation Complete
