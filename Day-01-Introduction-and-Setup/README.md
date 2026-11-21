@@ -509,7 +509,7 @@ Modules, their arguments, and practical usage will be studied later.
 
 ---
 
-## 2.6 🧩 Architecture Components Together
+## 🧩 2.6 Architecture Components Together
 
 | Component | Role |
 |---|---|
