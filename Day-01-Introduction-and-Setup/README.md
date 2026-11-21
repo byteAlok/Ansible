@@ -14,6 +14,8 @@
 
 # 📚 Table of Contents
 
+> 💡 **Navigation Guide:** Click any topic in the Table of Contents to jump directly to that section. Some links may not work as expected.
+
 - [🚀 1. Introduction to Ansible](#1--introduction-to-ansible)
   - [💡 1.1 What is Ansible?](#11-what-is-ansible)
   - [🌐 1.2 Where is Ansible Used?](#12-where-is-ansible-used)
