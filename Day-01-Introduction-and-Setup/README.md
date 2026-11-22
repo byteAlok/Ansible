@@ -10,6 +10,10 @@
   <img src="https://img.shields.io/badge/DevOps-Infrastructure-7C3AED?style=for-the-badge&logo=linux&logoColor=white" />
 </p>
 
+<p align="center">
+  <img src="../Images/IMG-Day-1-Introduction-and-Setup.png" width="70%" alt="Ansible Learning Banner" />
+</p>
+
 ---
 
 # 📚 Table of Contents

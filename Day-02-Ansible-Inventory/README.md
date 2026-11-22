@@ -11,6 +11,10 @@
   <b>🚀 Learning how to define, organize, group, target, and manage infrastructure using Ansible Inventory.</b>
 </p>
 
+<p align="center">
+  <img src="../Images/IMG-Day-2-Inventory.png" width="70%" alt="Ansible Learning Banner" />
+</p>
+
 ---
 
 # 📚 Table of Contents

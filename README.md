@@ -121,27 +121,40 @@ Each day contains a Markdown file documenting the topics covered, commands execu
 ```text
 Ansible/
 │
+├── Day-01-Introduction-and-Setup/
+│     ├── README.md
+│     └── ...
+│
+├── Day-02-Ansible-Inventory/
+│     ├── README.md
+│     └── ...
+│
+├── Day-03-Ad-hoc-Commands/
+│     ├── README.md
+│     └── ...
+│
+├── Day-04-Ansible-Playbooks/
+│     ├── README.md
+│     └── ...
+│
+├── Day-05-Advanced-Playbooks/
+│     ├── README.md
+│     └── ...
+│
+├── Day-06-Roles-and-Configuration-Management/
+│     ├── README.md
+│     └── ...
+│
+├── Day-07-Advanced-Ansible/
+│     ├── README.md
+│     └── ...
+│
+├── Images/
+│     ├── IMG-Day-1-Introduction-and-Setup.png
+│     ├── IMG-Day-2-Inventory.png
+│     └── ...
+│
 ├── README.md
-│
-├── Day-01-Introduction-to-Ansible.md
-│
-├── Day-02-Ansible-Architecture.md
-│
-├── Day-03-Ansible-Installation.md
-│
-├── Day-04-SSH-Configuration/
-│   ├── README.md
-│   └── examples/
-│
-├── Day-05-Ansible-Inventory/
-│   ├── README.md
-│   └── inventory.ini
-│
-├── Day-06-Ad-Hoc-Commands.md
-│
-├── Day-07-Ansible-Playbooks/
-│   ├── README.md
-│   └── playbook.yml
 │
 └── ...
 ```
@@ -153,16 +166,16 @@ Ansible/
 **For theoretical topics and command-based practicals:**
 
 ```text
-Day-<n>-<Topic-Name>.md
+Day-<n>-<Topic-Name>/README.md
 ```
 
 Examples:
 
 ```text
-Day-01-Introduction-to-Ansible.md
-Day-02-Ansible-Architecture.md
-Day-03-Ansible-Installation.md
-Day-06-Ad-Hoc-Commands.md
+Day-01-Introduction-to-Ansible/README.md
+Day-02-Ansible-Inventory/README.md
+Day-03-Ad-hoc-Commands/README.md
+Day-04-Playbooks/README.md
 ```
 
 **For practical topics requiring additional files:**
@@ -179,7 +192,7 @@ Day-<n>-<Topic-Name>/
 Example:
 
 ```text
-Day-07-Ansible-Playbooks/
+Day-07-Advanced-Ansible/
 │
 ├── README.md
 ├── inventory.ini
