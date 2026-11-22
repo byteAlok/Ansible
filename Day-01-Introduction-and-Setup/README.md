@@ -11,7 +11,7 @@
 </p>
 
 <p align="center">
-  <img src="../Images/IMG-Day-1-Introduction-and-Setup.png" width="70%" alt="Ansible Learning Banner" />
+  <img src="../Images/IMG-Day-1-Introduction-and-Setup.png" width="75%" alt="Ansible Learning Banner" />
 </p>
 
 ---

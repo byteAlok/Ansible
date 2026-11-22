@@ -12,7 +12,7 @@
 </p>
 
 <p align="center">
-  <img src="../Images/IMG-Day-2-Inventory.png" width="70%" alt="Ansible Learning Banner" />
+  <img src="../Images/IMG-Day-2-Inventory.png" width="75%" alt="Ansible Learning Banner" />
 </p>
 
 ---
